@@ -1,8 +1,7 @@
-kind: Namesapce
 apiVersion: v1
-
+kind: Namespace
 metadata:
-  name: expense
+  name: development
   labels:
     name: expense
-    environment: dev
+    env: qa

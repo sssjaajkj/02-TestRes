@@ -7,11 +7,11 @@ spec:
   - name: nginx
     image: nginx
     env:
-    - name: course
+    - name: trainer
       valueFrom:
         configMapKeyRef:
           name: aws79s
-          key: course
+          key: trainer
 
     
 

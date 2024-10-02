@@ -1,0 +1,14 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: annotations
+  labels:
+   course: k8
+   trainer: siva
+  annotations:
+    kubernetes.io/created-by: 'siva'
+    jenkins.build.url: 'https://jenkins.aws79s.online' 
+spec:
+  containers:
+  - name: nginx
+    image: nginx02  02   

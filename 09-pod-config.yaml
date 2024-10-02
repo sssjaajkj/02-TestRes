@@ -12,3 +12,8 @@ spec:
         configMapKeyRef:
           name: aws79s
           key: course
+    - name: trainer
+      valueFrom:
+        configMapKeyRef:
+          name: aws79s
+          key: trainer      

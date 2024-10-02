@@ -3,7 +3,7 @@ apiVersion: v1
 metadata:
   name: labels
   labels:
-   course: k.8@n
+   course: k8
    trainer: siva
 spec:
   containers:

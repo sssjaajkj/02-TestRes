@@ -1,0 +1,8 @@
+kind: configMap
+apiVersion: v1
+metadata:
+  name: aws79s
+data:
+  course: "Devops with AWS"
+  trainer: "siva"
+  github: "https://github.com/sssjaajkj/02-Ts/blob/main/04-labels.yaml"  

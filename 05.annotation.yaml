@@ -7,7 +7,7 @@ metadata:
    trainer: siva
   annotations:
     kubernetes.io/created-by: 'siva'
-    jenkins.build.url: 'https://jenkins.aws79s.online' 
+    jenkins.build.url: "https://jenkins.aws79s.online"
 spec:
   containers:
   - name: nginx

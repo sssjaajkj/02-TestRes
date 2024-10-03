@@ -7,6 +7,7 @@ spec:
   selector:
    name: frontend
    project: expense
+   component: frontend
    environment: dev
   ports:
   - protocol: TCP

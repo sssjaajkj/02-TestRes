@@ -1,15 +1,28 @@
-kind: Service
+# kind: Service
+# apiVersion: v1
+# metadata:
+#   name: nginx-np
+# spec:
+#   type: NodePort
+#   selector:
+#    name: frontend
+#    project: expense
+#    environment: dev
+#   ports:
+#   - protocol: TCP
+#     port: 80   # service port
+#     targetPort: 80 # targetport  
+#     nodePort: 30000 
+
 apiVersion: v1
+kind: Service
 metadata:
-  name: nginx-np
+  name: my-service
 spec:
   type: NodePort
-  selector:
-   name: frontend
-   project: expense
-   environment: dev
   ports:
-  - protocol: TCP
-    port: 80   # service port
-    targetPort: 80 # targetport  
-    nodePort: 30000 
+    - port: 80
+      targetPort: 80
+      nodePort: 30000  # Ensure it's lowercase 'nodePort'
+  selector:
+    app: my-app

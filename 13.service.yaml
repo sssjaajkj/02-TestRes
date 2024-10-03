@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: nginx
+spec:
+  selector:
+   name: frontend
+   project: expense
+   environment: dev
+  ports:
+  - protocol: TCP
+    port: 80   # service port
+    targetPort: 80 # targetport   
